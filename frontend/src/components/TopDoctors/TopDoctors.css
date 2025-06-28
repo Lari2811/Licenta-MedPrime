@@ -1,0 +1,47 @@
+.doctor-card-wrapper {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    max-width: 260px;
+  }
+  
+  .doctor-card-inner {
+    position: relative;
+    width: 100%;
+    height: 330px; /* Asta e esențial! */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .doctor-card-wrapper:hover .doctor-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .doctor-card-front,
+  .doctor-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.75rem;
+  }
+  
+  
+  .doctor-card-front {
+    background-color: #ffffff;
+    z-index: 2;
+  }
+    
+  .doctor-card-back {
+    background-color: #acaed36e; 
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    color: #1f2937; /* text-gray-800 */
+    font-size: 0.95rem;
+  }
+  

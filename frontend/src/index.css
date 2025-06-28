@@ -1,0 +1,333 @@
+/* doar după charset vin restul */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+*{
+  font-family: Lora;
+}
+:root 
+{
+  --color-bg-primary: #d6caf9;
+  --primary-color: #d6caf9; 
+  --hover-color: #d9d0f0;
+  --text-dark: #333;
+  --text-light: #666;
+  --text-title: #4C1D95;
+  --border-top-bottom: #136289;
+}
+
+
+.active hr {
+  display: block;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(120, 120, 120, 0.3);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(120, 120, 120, 0.5);
+}
+
+::-webkit-scrollbar-button {
+  height: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='10' viewBox='0 0 24 24' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M7 14l5-5 5 5z'/></svg>") no-repeat center;
+  background-size: 20px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='10' viewBox='0 0 24 24' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat center;
+  background-size: 20px;
+}
+
+
+.slick-dots li button:before {
+  font-size: 8px !important;           
+  color: #000 !important;     
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #9333ea !important;   
+}
+
+.slick-dots {
+  bottom: -20px !important;  
+}
+
+.btn-outline-purple {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.525rem;
+  padding-bottom: 0.525rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #7c3aed; 
+  background-color: #fff;
+  border: 2.7px solid #7c3aed; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-purple:hover {
+  background-color: #f5f3ff; 
+  transform: scale(1.03);
+  border: 2.7px solid #a462e2
+}
+
+.btn-outline-purple-little {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.425rem;
+  padding-bottom: 0.425rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #7c3aed; 
+  background-color: #fff;
+  border: 2.7px solid #7c3aed; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-purple-little:hover {
+  background-color: #f5f3ff; 
+  transform: scale(1.03);
+  border: 2.7px solid #a462e2
+}
+
+.btn-outline-purple-little-little {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.325rem;
+  padding-bottom: 0.325rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 0.875rem; 
+  color: #7c3aed;
+  background-color: #fff;
+  border: 2.7px solid #7c3aed;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-purple-little-little:hover {
+  background-color: #f5f3ff; 
+  transform: scale(1.02);
+  border: 2.7px solid #a462e2
+}
+
+
+.btn-outline-green {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.525rem;
+  padding-bottom: 0.525rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #0f8838; 
+  background-color: #fff;
+  border: 2.7px solid #0f8838; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-green:hover {
+  background-color: #eafce9; 
+  transform: scale(1.03);
+  border: 2.7px solid #2e8f4e
+}
+
+.btn-outline-red {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.525rem;
+  padding-bottom: 0.525rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #e62727; 
+  background-color: #fff;
+  border: 2.7px solid #e62727; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-red:hover {
+  background-color: #f8edede5; 
+  transform: scale(1.03);
+  border: 2.7px solid #bd2020
+}
+
+.btn-outline-red-little {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.425rem;
+  padding-bottom: 0.425rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #e62727; 
+  background-color: #fff;
+  border: 2.7px solid #e62727; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-red-little:hover {
+  background-color: #f8edede5; 
+  transform: scale(1.03);
+  border: 2.7px solid #bd2020
+}
+
+.btn-outline-red-little-little {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.325rem;
+  padding-bottom: 0.325rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #e62727; 
+  background-color: #fff;
+  border: 2.7px solid #e62727; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-red-little-little:hover {
+  background-color: #f8edede5; 
+  transform: scale(1.02);
+  border: 2.7px solid #bd2020
+}
+
+
+.btn-outline-green-little {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.425rem;
+  padding-bottom: 0.425rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #0f8838; 
+  background-color: #fff;
+  border: 2.7px solid #0f8838; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-green-little:hover {
+  background-color: #eafce9; 
+  transform: scale(1.03);
+  border: 2.7px solid #2e8f4e
+}
+
+.btn-outline-green-little-little {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.325rem;
+  padding-bottom: 0.325rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #0f8838; 
+  background-color: #fff;
+  border: 2.7px solid #0f8838; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-green-little-little:hover {
+  background-color: #eafce9; 
+  transform: scale(1.02);
+  border: 2.7px solid #2e8f4e
+}
+
+
+.btn-outline-blue-little-little {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.325rem;
+  padding-bottom: 0.325rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #2d6aec; 
+  background-color: #f7fcff;
+  border: 2.7px solid #2d6aec; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.5s;
+}
+
+.btn-outline-blue-little-little:hover {
+  background-color: #d2e6ffe5; 
+  transform: scale(1.02);
+  border: 2.7px solid #2d6aec
+}
+
+
+/* exemplu de override */
+
+.react-datepicker {
+  font-family: 'Inter', sans-serif;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #f3e8ff; /* mov pal */
+  border-bottom: none;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #9333ea; /* violet */
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #e9d5ff;
+  color: #4b0082;
+}
+
