@@ -4,7 +4,7 @@
 ---
 
 ## Descrierea livrabilelor:
-- cod susă complet pentru aplicația web (frontend și backend)
+- cod sursă complet pentru aplicația web (frontend și backend)
 - fișier .gitignore pentru a exclude fișierele binare
 - README.md cu instrucțiuni de instalare, rulare și compilare
 ---
